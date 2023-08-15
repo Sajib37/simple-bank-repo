@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-4 mb-4 font-bold">Letsb  gets some <span class="text-teal-300">Mooooney</span></h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-3 gap-12 w-3/4 mx-auto mt-16">
+            <div class="bg-lime-600 px-4 py-12 rounded-xl">
+                <h1 class="text-2xl mb-4 text-white ">Deposit</h1>
+                <h1  class="text-5xl text-white">$<span id="total-deposite">00</span></h1>
+            </div>
+            <div class="bg-red-400 px-4 py-12 rounded-xl">
+                <h1 class="text-2xl mb-4 text-white ">withdraw</h1>
+                <h1 class="text-5xl text-white">$<span id="total-withdraw">00</span></h1>
+            </div>
+            <div class="bg-cyan-700 px-4 py-12 rounded-xl">
+                <h1 class="text-2xl mb-4 text-white ">Balance</h1>
+                <h1 class="text-5xl text-white">$<span id="total-balance">1200</span></h1>
+            </div>  
+        </section >
+
+        <section class="grid grid-cols-2 gap-8 w-3/4 mx-auto mt-8">
+            <div class="bg-gray-600 px-4 py-12 rounded-xl">
+                <h1 class="text-2xl mb-4 text-white ">Please,Deposit..</h1>
+                <input id="deposite-ammount" class="block mb-4 w-9/12 p-2 rounded-full" type="text" placeholder="Enter deposite Ammount">
+                <button id="deposite-btn" class="bg-teal-400 px-5 py-2 rounded-xl font-semibold hover:bg-red-600">Submit</button>
+            </div>
+            <div class="bg-indigo-600 px-4 py-12 rounded-xl">
+                <h1 class="text-2xl mb-4 text-white ">Please,withdraw..</h1>
+                <input id="withdraw-ammount"  class="block mb-4 w-9/12 p-2 rounded-full" type="text" placeholder="Enter withdraw Ammount">
+                <button id="withdraw-btn" class="bg-stone-300 px-5 py-2 rounded-xl font-semibold hover:bg-red-600"> Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/account.js"></script>
+</body>
+</html>
+
